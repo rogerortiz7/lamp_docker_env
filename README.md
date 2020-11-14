@@ -3,7 +3,7 @@
 ## Provisioned:
 - Debian
 - MySql: 8
-- PHP: 7.3 with Apache, PDO, myslqi, ZLIB 
+- PHP: 7.3 with Apache, PDO, myslqi, ZLIB, phpunint as global, composer as global
 # SetUp
 
 - Move the files to your project directory
