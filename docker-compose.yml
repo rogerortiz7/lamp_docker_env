@@ -4,7 +4,7 @@ services:
         build:
             context: ./php
             dockerfile: Dockerfile
-        container_name: php73
+        container_name: php74
         depends_on: 
             - db
         volumes:
@@ -22,5 +22,16 @@ services:
             MYSQL_DATABASE: alunno
             MYSQL_USER: devuser
             MYSQL_PASSWORD: devpassword
+        volumes:
+            - mysql-data:/var/lib/mysql
         ports: 
             - 3306:3306
+
+    adminer:
+        container_name: admin
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
+volumes:
+        mysql-data:
