@@ -3,7 +3,7 @@
 ## Provisioned:
 - Debian
 - MySql: 8
-- PHP: 7.3 with Apache, PDO, myslqi, ZLIB 
+- PHP: 7.3 with Apache, PDO, myslqi, ZLIB, phpunint as global, composer as global
 # SetUp
 
 - Move the files to your project directory
@@ -17,6 +17,8 @@ Docker compose bind your /www directory (you can change the name as you want) wi
 - WorkSpace: Just execute docker-compose exec web bash
 - MySql: Just execute docker-compose exec db bash
 
+## Adminer
+- localhost:8080
 ## Extra
 
 If you want add more addons just add it in /php/Dockerfile
